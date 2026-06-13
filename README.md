@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Customer Churn Predictor
 
-## Getting Started
+A high-performance, AI-driven analytics dashboard built with **Next.js** and **Groq AI**. This application predicts the probability of a customer churning (canceling their service) based on behavioral and demographic data, providing real-time SHAP-style feature importance explanations.
 
-First, run the development server:
+![Churn Predictor Preview](https://raw.githubusercontent.com/NDHARSHINI23/churn-predictor/master/public/preview.png) *(Note: Add a screenshot later if available)*
 
+---
+
+## ⚡ Features
+
+- **Real-time AI Inference:** Powered by Groq's Llama 3 for near-instant predictions.
+- **Explainable AI (XAI):** Provides SHAP-style feature importance to show *why* a customer is at risk.
+- **Dynamic Risk Gauge:** Visualizes churn probability from Low to High risk.
+- **Interactive Scenarios:** Modify customer profiles (Tenure, Charges, Contract type) to see impact on retention.
+- **Modern UI:** Sleek, dark-mode terminal-inspired aesthetics with glassmorphism.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** [Next.js 15+](https://nextjs.org/) (App Router), React, Vanilla CSS.
+- **AI Engine:** [Groq Cloud](https://console.groq.com/) (Llama-3.3-70b).
+- **Deployment:** [Vercel](https://vercel.com/).
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/NDHARSHINI23/churn-predictor.git
+cd churn-predictor
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3. Set up Environment Variables
+Create a `.env.local` file in the root directory:
+```env
+GROQ_API_KEY=your_gsk_key_here
+```
+*You can get a free API key at [console.groq.com](https://console.groq.com).*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run the development server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to see the app.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Deployment (Vercel)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push your code to GitHub.
+2. Link your GitHub repo to [Vercel](https://vercel.com).
+3. **Crucial:** Add the `GROQ_API_KEY` to Vercel's **Environment Variables** in the project settings.
+4. Deploy!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📝 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👨‍💻 Developed By
+
+**[NDHARSHINI23](https://github.com/NDHARSHINI23)**
